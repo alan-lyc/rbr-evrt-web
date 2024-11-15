@@ -1,4 +1,4 @@
- class PartnersSection {
+class PartnersSection {
     constructor(containerId) {
         this.container = document.getElementById(containerId);
         this.data = null;
@@ -18,7 +18,10 @@ renderPartnerCard(partner) {
     return `
         <div class="partner-card partner-card--${partner.tier.toLowerCase()}">
             <div class="partner-card__image" data-name="${partner.name}">
-                <a href="${partner.website}" target="_blank" rel="noopener noreferrer">
+                <a href="${partner.website}" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="partner-card__link">
                     <img src="${partner.logo}" alt="${partner.name} logo">
                 </a>
             </div>
