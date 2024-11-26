@@ -50,7 +50,7 @@
 .partners__grid--platinum {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     max-width: 800px;
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 .partners__grid--gold {
